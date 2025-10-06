@@ -4,7 +4,7 @@
     <title>Tugas Pemrograman Web Lanjut</title>
 </head>
 <body>
-    <h2>1. Negara Asia dan Ibukotanya</h2>
+    <h2> Negara Asia dan Ibu kota nya</h2>
     <?php
     $negaraAsia = [
         "Indonesia" => "Jakarta",
@@ -30,7 +30,7 @@
 
     <hr>
 
-    <h2>2. Pengolahan Data Suhu Udara</h2>
+    <h2> Pengolahan Data Suhu Udara</h2>
     <?php
     $suhuUdara = [29, 35, 38, 31, 34, 36, 39, 33, 34, 40, 35, 32, 37, 34, 31, 36, 33, 39, 30, 33, 41];
 
@@ -53,7 +53,7 @@
 
     <hr>
 
-    <h2>3. Konversi Mata Uang ke Rupiah</h2>
+    <h2> Konversi Mata Uang ke Rupiah</h2>
     <?php
     $rate = [
         'usd' => 14367,
