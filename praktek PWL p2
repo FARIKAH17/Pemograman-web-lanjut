@@ -1,10 +1,12 @@
+//SOAL NO 1
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Tugas Pemrograman Web Lanjut</title>
 </head>
 <body>
-    <h2>1. Negara Asia dan Ibukotanya</h2>
+    <h2> Negara Asia dan Ibu kota nya</h2>
     <?php
     $negaraAsia = [
         "Indonesia" => "Jakarta",
@@ -31,7 +33,7 @@
     </html>
 
 
-//soal no 2 
+//SOAL NO 2 
 
 <!DOCTYPE html>
 <html>
@@ -64,7 +66,8 @@
     </body>
     </html>
 
-//soal no 3
+
+//SOAL NO 3
 
 
 <!DOCTYPE html>
@@ -74,3 +77,35 @@
 </head>
 <body>
 
+<h2>3. Konversi Mata Uang ke Rupiah</h2>
+    <?php
+    $rate = [
+        'usd' => 14367,
+        'jpy' => 1192,
+        'cny' => 2262,
+        'krw' => 11.87,
+        'myr' => 3416,
+        'sgd' => 10621,
+        'gbp' => 19074,
+        'eur' => 15891,
+    ];
+
+    function konversiKeRupiah($jumlah, $mataUang, $rate) {
+        $mataUang = strtolower($mataUang);
+        if (isset($rate[$mataUang])) {
+            $hasil = $jumlah * $rate[$mataUang];
+            echo "$jumlah $mataUang dikonversi menjadi Rp " . number_format($hasil, 0, ',', '.') . "<br>";
+        } else {
+            echo "Mata uang $mataUang tidak dikenali.<br>";
+        }
+    }
+
+    // Contoh penggunaan
+    konversiKeRupiah(8, 'usd', $rate);
+    konversiKeRupiah(7, 'jpy', $rate);
+    konversiKeRupiah(10, 'eur', $rate);
+    konversiKeRupiah(10000, 'krw', $rate);
+    
+    ?>
+    </body>
+    </html>
