@@ -27,7 +27,50 @@
         $no++;
     }
     ?>
-</body>
-</html>
+    </body>
+    </html>
 
-  
+
+//soal no 2 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Pemrograman Web Lanjut</title>
+</head>
+<body>
+
+    <h2> Pengolahan Data Suhu Udara</h2>
+    <?php
+    $suhuUdara = [29, 35, 38, 31, 34, 36, 39, 33, 34, 40, 35, 32, 37, 34, 31, 36, 33, 39, 30, 33, 41];
+
+    // a. Rata-rata suhu
+    $rata2 = array_sum($suhuUdara) / count($suhuUdara);
+    echo "Rata-rata suhu adalah " . round($rata2, 1) . "<br>";
+
+    // b. 5 suhu paling rendah
+    $terendah = $suhuUdara;
+    sort($terendah);
+    $terendah5 = array_slice($terendah, 0, 5);
+    echo "5 suhu paling rendah adalah " . implode(", ", $terendah5) . "<br>";
+
+    // c. 5 suhu paling tinggi
+    $tertinggi = $suhuUdara;
+    rsort($tertinggi);
+    $tertinggi5 = array_slice($tertinggi, 0, 5);
+    echo "5 suhu paling tinggi adalah " . implode(", ", $tertinggi5) . "<br>";
+    
+    ?>
+    </body>
+    </html>
+
+//soal no 3
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Pemrograman Web Lanjut</title>
+</head>
+<body>
+
